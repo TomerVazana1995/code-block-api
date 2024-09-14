@@ -33,7 +33,7 @@ app.get("/:id", async (req, res) => {
 
 const io = new Server(expressServer, {
   cors: {
-    origin: "https://code-blocks-production.up.railway.app/",
+    origin: "https://code-blocks-production.up.railway.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
