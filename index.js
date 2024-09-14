@@ -5,15 +5,11 @@ const { Server } = require("socket.io");
 const cors = require("cors");
 const pg = require("pg");
 
-
-const connectionString ='postgresql://postgres:xuDZlyMmFbqGdDIewKEEPgmuDSLqVGEX@autorack.proxy.rlwy.net:14648/railway'
-
 const pool = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
 });
 
 const PORT = process.env.PORT || 5000;
-
 
 const app = express();
 app.use(cors());
